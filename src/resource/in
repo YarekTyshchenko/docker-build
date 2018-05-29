@@ -1,0 +1,8 @@
+#!/bin/bash
+echo ">>> In"
+env
+
+payload=$(mktemp /tmp/resource-in.XXXXXX)
+cat > $payload <&0
+
+cat $payload
